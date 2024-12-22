@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://cdn.discordapp.com/attachments/1315708448846905464/1315717902938275860/1355517.png?ex=6768e808&is=67679688&hm=f20e8a2f56b6937139e3fbf41604c2aba34067d58293098d1544dbf5cbfa64e6&);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**********************CURSOR**********************/
+
+:root {
+    --cursor-default: url(../cursor/normal.cur), auto;
+    --cursor-pointer: url(../cursor/ak47.cur), auto;
+    --cursor-text: url(../cursor/silverkatana.cur), auto;
+}
+
+html {
+    cursor: var(--cursor-default);
+}
+
+a, button, input[type="checkbox"], input[type="radio"], input[type="submit"] {
+    cursor: var(--cursor-pointer);
+}
+
+h1, h2, h3, h4, h5, h6, p, blackquote, adress, label, code, input[type="text"], input[type="email"], input[type="phone"], textarea {
+    cursor: var(--cursor-text);
+}
+
+/**********************CURSOR**********************/
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform-style: preserve-3d;
+}
+
+.container .card {
+    width: 300px;
+    height: 450px;
+    padding: 30px;
+
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    transform-style: preserve-3d;
+    background-color: black;
+}
+
+.container .card img.rz {
+    max-width: 250px;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.container .card:hover button {
+    transform: translate3d(0, 0, 100px);
+
+}
+
+.container .card:hover .info{
+    transform: translate3d(0, 0, 100px);
+}
+
+
+
+.container div.card1 {
+    background-image: linear-gradient(45deg, #1f1f1f, #000000);
+}
+
+
+/**********************INFO PESSOAL**********************/
+
+.info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.info .foto {
+    max-width: 40px;
+    border-radius: 50px;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.container .card h3 {
+    color: rgb(255, 255, 255);
+    transform-style: preserve-3d;
+}
+
+.info .verificado {
+    max-width: 16px;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+/**********************FRASES**********************/
+
+.container .card h2 {
+    color: rgb(192, 192, 192);
+    transform-style: preserve-3d;
+
+    border-color: linear-gradient(45deg, #1f1f1f, #000000);
+}
+
+
+
+/**********************REDES**********************/
+
+.redes {
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    padding: 10px;
+}
+
+.container .redes img {
+    max-width: 40px;
+    border-radius: 10px;
+
+    transform-style: preserve-3d;
+    transition: .5s;
+}
